@@ -1,6 +1,22 @@
 :root {
-    --hd-color: #31343d;
-    --bd-back: #ededf6;
-    --description-back: #92cbcd;
-    --underline: #445877;
+    --clr-primary-200: #92cbcd;
+    --clr-primary-500: #445877;
+
+    --clr-neutral-900: #31343d;
+    --clr-neutral-100: #ededf6;
+
+    --ff-primary: Helvetica, Tahoma, serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fs-300: 12px;
+    --fs-400: 14px;
+    --fs-500: 16px;
+    --fs-600: 18px;
+    --fs-700: 20px;
+    --fs-800: 22px;
+
+    --fs-body: var(--fs-400);
+    --fs-nav: var(--fs-500);
 }
