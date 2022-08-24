@@ -14,6 +14,7 @@
     --fs-400: 14px;
     --fs-500: 16px;
     --fs-600: 18px;
+    --fs-650: 20px;
     --fs-700: 24px;
     --fs-800: 28px;
 
@@ -107,6 +108,10 @@ body {
     font-size: var(--fs-600);
 }
 
+.fs-650 {
+    font-size: var(--fs-650);
+}
+
 .fs-700 {
     font-size: var(--fs-700);
 }
@@ -136,36 +141,43 @@ body {
     gap: 1rem;
 }
 
-@media (min-width: 50em) {
-    .even-column {
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-    }
-}
-
 .heading {
     display: inline-block;
     padding-top: 25px;
     padding-bottom: 27px;
-    margin-left: 15px;
 }
 
 .header div {
-    padding-top: 28px;
-    margin-right: 20px;
+    padding-top: 16px;
+    margin-right: 22px;
     float: right;
-    background: var(--clr-neutral-900);
 }
 
 .header div ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 23px;
     font-family: var(--ff-primary);
+}
+
+.about-me-section {
+    display: flex;
+    flex: 0 0 300px;
+    gap: 1em;
+    margin-left: -130px;
 }
 
 .nav-bar img {
     width: 100%;
     height: 150px;
+}
+
+.about-me-section img {
+    width: 175px;
+    height: 175px;
+}
+
+.about-me, .portfolio {
+    margin-top: 25px;
 }
 
 .financial-report, .led-wall, .call-center, .puzzle, .css-snippets {
@@ -181,13 +193,6 @@ body {
 .small-projects1, .small-projects2 {
     display: grid;
     gap: 1rem;
-}
-
-@media (min-width: 50em) {
-    .small-projects1, .small-projects2 {
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-    }
 }
 
 .projects img {
@@ -236,4 +241,51 @@ body {
     /* border: 1px solid red;
     box-shadow: 12px 12px 2px 1px --clr-neutral-900; */
     scale: 105%;
+}
+
+.contact {
+    margin: 15px;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 50em) {
+    .small-projects1, .small-projects2 {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
+@media (min-width: 830px) {
+    .even-column {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
+@media (max-width: 830px) {
+    .header, .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-nav {
+        margin-bottom: 15px; 
+        margin-top: -40px;
+    }
+
+    .about-me-section {
+        display: flex;
+        flex: 0 0 300px;
+        gap: 1em;
+        margin-left: 0px;
+    }
 }
