@@ -12,16 +12,16 @@
 <body>
     <header class="text-neutral-100 bg-neutral-900" id="header">
         <div class="header">
-            <h1 class="heading | fs-primary-heading fw-bold">Hiroyuki James Matsushita</h1>
+            <h1 class="heading | fs-primary-heading fw-bold">Hiroyuki JamesMatsushita</h1>
             <div>
-                <ul class="fs-600">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>     
-        </div>
+            <ul role="list" class="nav-list | fs-600">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </div>     
     </header>
 
     <nav class="nav-bar | bg-neutral-100">
@@ -30,79 +30,97 @@
 
     <section class="bg-neutral-100">
         <div class="container">
+            <div class="even-column">
                 <div class="about-me" id="about-me">
-                    <h2 class="fs-secondary-heading">About Me</h2>
+                    <h2 class="fs-secondary-heading fw-bold">About Me</h2>
+                </div>
+                <div>
                     <img>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga, autem maxime, nisi aspernatur sunt eaque inventore voluptas, explicabo nesciunt reprehenderit asperiores tempora cumque porro temporibus doloribus officia illum officiis?
 
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsum, accusamus eum adipisci facere aperiam cum sint voluptatem vel hic, alias beatae ea odio necessitatibus doloremque doloribus quibusdam harum iusto.
                     </p>
-                </div>   
+                </div>
+            </div>   
         </div>
     </section>
 
     <section class="bg-neutral-100">
-        <div class="portfolio" id="portfolio">
-            <h2 class="fs-secondary-heading">Portfolio</h2>
-            <div class="projects">
-                <div class="financial-report">
-                    <img src="./assets/images/financial.jpeg" alt="financial charts, money, pen and calculator laid out on a table">
-                    <div class="bottom-left">
-                        <h3 class="fs-600">Financial Report</h3>
-                        <p>MERN Stack</p>
-                    </div>
+        <div class="container">
+            <div class="even-column">
+                <div class="portfolio" id="portfolio">
+                    <h2 class="fs-secondary-heading fw-bold">Portfolio</h2>
                 </div>
-                <div class="led-wall">
-                    <img src="./assets/images/led-wall.jpeg" alt="pink and blue gradient LED wall">
-                    <div class="bottom-left">
-                        <h3 class="fs-600">LED Wall</h3>
-                        <p>Node/IoT</p>
+                <div class="projects">
+                    <div class="financial-report">
+                        <img src="./assets/images/financial.jpeg" alt="financial charts, money, pen and calculator laid out on a table">
+                        <div class="bottom-left">
+                            <h3 class="fs-600">Financial Report</h3>
+                            <p>MERN Stack</p>
+                        </div>
                     </div>
-                </div>
-                <div class="call-center">
-                    <img src="./assets/images/global-call-centers.jpg" alt="call center office with computers, phones and headsets hanging from the computer screen lined up side by side">
-                    <div class="bottom-left">
-                        <h3 class="fs-600">Call Center</h3>
-                        <p>React/Javascript/CSS</p>
+                    <div class="small-projects1">
+                        <div class="led-wall">
+                            <img src="./assets/images/led-wall.jpeg" alt="pink and  blue gradient LED wall">
+                            <div class="bottom-left">
+                                <h3 class="fs-600">LED Wall</h3>
+                                <p>Node/IoT</p>
+                            </div>
+                        </div>
+                        <div class="call-center">
+                            <img src="./assets/images/global-call-centers.jpg"  alt="call center office with computers, phones and   headsets hanging from the computer screen lined up side   by side">
+                            <div class="bottom-left">
+                                <h3 class="fs-600">Call Center</h3>
+                                <p>React/Javascript/CSS</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="puzzle">
-                    <img src="./assets/images/puzzle.jpg" alt="image of building blocks in different shapes representing a puzzle">
-                    <div class="bottom-left">
-                        <h3 class="fs-600">Puzzle</h3>
-                        <p>MERN Stack</p>
-                    </div>
-                </div>
-                <div class="css-snippets">
-                    <img src="./assets/images/snippets.jpg" alt="a snippet of coding showing from the upper right corner angle">
-                    <div class="bottom-left">
-                        <h3>CSS Snippets</h3>
-                        <p>HTML/CSS</p>
+                    <div class="small-projects2">
+                        <div class="puzzle">
+                            <img src="./assets/images/puzzle.jpg" alt="image of     building blocks in different shapes representing a  puzzle">
+                            <div class="bottom-left">
+                                <h3 class="fs-600">Puzzle</h3>
+                                <p>MERN Stack</p>
+                            </div>
+                        </div>
+                        <div class="css-snippets">
+                            <img src="./assets/images/snippets.jpg" alt="a snippet of   coding showing from the upper right corner angle">
+                            <div class="bottom-left">
+                                <h3>CSS Snippets</h3>
+                                <p>HTML/CSS</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="contacts | bg-neutral-100">
-        <div class="contact" id="contact">
-            <h2 class="fs-secondary-heading">Contact</h2>
-            <div class="contact-info">
-                <ul>
-                    <li><a href="#">(555)555-5555</a></li>
-                    <li><a href="#">email</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                </ul>
-
+        <div class="container">
+            <div class="even-column">
+                <div class="contact" id="contact">
+                    <h2 class="fs-secondary-heading fw-bold">Contact</h2>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <li><a href="#">(555)555-5555</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
     <footer class="footer | bg-primary-500 text-primary-200">
-        <text>Made with HTML and CSS</text>
-        <text>2022</text>
+        <div>
+            <text>Made with HTML and CSS</text>
+        </div>
+        <div>
+            <text>2022</text>
+        </div>
     </footer>
 </body>
 

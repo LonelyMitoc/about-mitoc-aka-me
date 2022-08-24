@@ -26,6 +26,15 @@
     --fw-bold: 700;
 }
 
+/* Default body settings */
+body {
+    line-height: 1.5;
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    color: var(--clr-neutral-900);
+}
+
+/* Color and Font defaults to apply to HTML (easier to change later) */
 .text-primary-200 {
     color: var(--clr-primary-200);
 }
@@ -106,11 +115,32 @@
     font-size: var(--fs-800);
 }
 
-.container, .portfolio, .contact {
+/* .container {
     display: inline-block;
     padding: 5px;
-    margin: 25px 25px 50px 50px;
+    margin: 15px 0px 50px 50px;
     width: 90%;
+} */
+
+/* To make the width of the site responsive to the screen size */
+.container {
+    --max-width: 1110px;
+    --padding: 3rem;
+
+    width: min(var(--max-width), 100% - var(--padding));
+    margin-inline: auto;
+}
+
+.even-column {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 50em) {
+    .even-column {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
 
 .heading {
@@ -134,7 +164,7 @@
 }
 
 .nav-bar img {
-    width: 100vmax;
+    width: 100%;
     height: 150px;
 }
 
@@ -142,15 +172,22 @@
     position: relative;
 }
 
-.led-wall, .call-center, .puzzle, .css-snippets {
-    display: inline-flex;
-    flex: 0 1 300px;
-}
-
 .bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
+}
+
+.small-projects1, .small-projects2 {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 50em) {
+    .small-projects1, .small-projects2 {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
 
 .projects img {
@@ -164,7 +201,7 @@
     display: flexbox;
     width: 650px;
     height: 500px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .contact h2 {
@@ -176,7 +213,7 @@
     margin-right: 20px;
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     .heading {
         display: block;
         padding-top: 25px;
@@ -193,9 +230,10 @@
         margin-left: 20px;
         font-family: var(--ff-primary);
     }    
-}
+} */
 
-.financial-report img:hover {
-    border: 1px solid red;
-    box-shadow: 12px 12px 2px 1px --clr-neutral-900;
+.financial-report:hover, .led-wall:hover, .call-center:hover, .puzzle:hover, .css-snippets:hover {
+    /* border: 1px solid red;
+    box-shadow: 12px 12px 2px 1px --clr-neutral-900; */
+    scale: 105%;
 }
