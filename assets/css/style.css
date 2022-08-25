@@ -120,14 +120,7 @@ body {
     font-size: var(--fs-800);
 }
 
-/* .container {
-    display: inline-block;
-    padding: 5px;
-    margin: 15px 0px 50px 50px;
-    width: 90%;
-} */
-
-/* To make the width of the site responsive to the screen size */
+/* To make the width of the site responsive to larger screen sizes */
 .container {
     --max-width: 1110px;
     --padding: 3rem;
@@ -141,23 +134,49 @@ body {
     gap: 1rem;
 }
 
-.heading {
-    display: inline-block;
-    padding-top: 25px;
-    padding-bottom: 27px;
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 
-.header div {
-    padding-top: 16px;
-    margin-right: 22px;
-    float: right;
+.header h1 {
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 23px;
-    font-family: var(--ff-primary);
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
 }
+
+.header-nav a {
+    padding: 0px 15px 20px 20px;
+    margin-top: -20px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--clr-neutral-100);
+}
+
+/* Align the left side headings to the center of the section */
+.about-me, .contact{
+    display: flex;
+    align-items: center;
+}
+
+/* Tried to place a border on the right side but the portfolio section will not act like the rest */
+/* .about-me, .contact{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-right: 5px solid black;
+}
+
+.portfolio {
+    display: flex;
+    width: 65.5%;
+    border-right: 5px solid black;
+} */
 
 .about-me-section {
     display: flex;
@@ -176,10 +195,15 @@ body {
     height: 175px;
 }
 
-.about-me, .portfolio {
+.about-me-section p {
+    max-width: 80%;
+}
+
+.about-me, .portfolio, .contact {
     margin-top: 25px;
 }
 
+/* To position the text on top of the images */
 .financial-report, .led-wall, .call-center, .puzzle, .css-snippets {
     position: relative;
 }
@@ -203,52 +227,32 @@ body {
 }
 
 .financial-report img {
-    display: flexbox;
+    display: flex;
     width: 650px;
     height: 500px;
-    /* justify-content: center; */
+}
+
+.financial-report:hover, .led-wall:hover, .call-center:hover, .puzzle:hover, .css-snippets:hover {
+    scale: 105%;
+}
+
+.contact {
+    width: fit-content;
+    margin-bottom: 20px;
 }
 
 .contact h2 {
     display: inline-block;
 }
-.contact-info ul li {
-    display: inline-block;
+
+.contact-info {
     padding-top: 28px;
-    margin-right: 20px;
+    margin-left: -13%;
 }
 
-/* @media screen and (max-width: 576px) {
-    .heading {
-        display: block;
-        padding-top: 25px;
-        padding-bottom: 27px;
-        margin-left: 15px;
-    }
-    .header div {
-        padding-top: 28px;
-        margin-right: 20px;
-        background: var(--clr-neutral-900);
-    }
-    .header div ul li {
-        display: block;
-        margin-left: 20px;
-        font-family: var(--ff-primary);
-    }    
-} */
-
-.financial-report:hover, .led-wall:hover, .call-center:hover, .puzzle:hover, .css-snippets:hover {
-    /* border: 1px solid red;
-    box-shadow: 12px 12px 2px 1px --clr-neutral-900; */
-    scale: 105%;
-}
-
-.contact {
-    margin: 15px;
-}
-
-.contact-info ul li {
-    margin-bottom: 15px;
+.contact-info a {
+    color: var(--clr-neutral-900);
+    padding: 10px;
 }
 
 .footer div {
@@ -277,10 +281,17 @@ body {
         justify-content: center;
     }
 
+    /* For row navigation*/
     .header-nav {
-        margin-bottom: 15px; 
-        margin-top: -40px;
+        margin-top: 40px;
     }
+
+    /* For column navigation option */
+    /* .header-nav {
+        margin-bottom: 15px; 
+        margin-top: 35px;
+        flex-direction: column;
+    } */
 
     .about-me-section {
         display: flex;
@@ -289,3 +300,15 @@ body {
         margin-left: 0px;
     }
 }
+
+/* Tried to center the smaller projects but could not make it responsive */
+/* @media (max-width: 799px) {
+    .led-wall, .call-center, .puzzle, .css-snippets {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom-left {
+        left: 215px;
+    }
+} */
