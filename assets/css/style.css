@@ -35,6 +35,11 @@ body {
     color: var(--clr-neutral-900);
 }
 
+section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Color and Font defaults to apply to HTML (easier to change later) */
 .text-primary-200 {
     color: var(--clr-primary-200);
@@ -199,8 +204,11 @@ body {
 }
 
 .about-me, .portfolio, .contact {
-    margin-top: 25px;
     padding-left: 3rem;
+}
+
+.portfolio {
+    margin-top: 50px;
 }
 
 /* To position the text on top of the images */
@@ -245,10 +253,6 @@ body {
     display: inline-block;
 }
 
-.contact-info {
-    padding-top: 28px;
-}
-
 .contact-info a {
     color: var(--clr-neutral-900);
     padding: 10px;
@@ -259,21 +263,21 @@ body {
     justify-content: center;
 }
 
-@media (min-width: 50em) {
+@media screen and (min-width: 50em) {
     .small-projects1, .small-projects2 {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
 }
 
-@media (min-width: 830px) {
+@media screen and (min-width: 830px) {
     .even-column {
         grid-auto-flow: column;
         grid-auto-columns: 1fr 2fr;
     }
 }
 
-@media (max-width: 830px) {
+@media screen and (max-width: 830px) {
     .header, .header-nav {
         display: flex;
         flex-wrap: wrap;
@@ -310,9 +314,23 @@ body {
     }
 }
 
+@media screen and (max-width: 705px) {
+    .projects, .financial-report img {
+        width: (100% - 1rem);
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 410px) {
     .about-me-section {
         display: block;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .financial-report img {
+        width: 320px;
+        height: 300px;
     }
 }
 
