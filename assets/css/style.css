@@ -180,9 +180,8 @@ body {
 
 .about-me-section {
     display: flex;
-    flex: 0 0 300px;
+    flex: 0 0 666px;
     gap: 1em;
-    margin-left: -130px;
 }
 
 .nav-bar img {
@@ -191,16 +190,17 @@ body {
 }
 
 .about-me-section img {
-    width: 175px;
+    width: 165px;
     height: 175px;
 }
 
 .about-me-section p {
-    max-width: 80%;
+    max-width: 67%;
 }
 
 .about-me, .portfolio, .contact {
     margin-top: 25px;
+    padding-left: 3rem;
 }
 
 /* To position the text on top of the images */
@@ -217,6 +217,7 @@ body {
 .small-projects1, .small-projects2 {
     display: grid;
     gap: 1rem;
+    width: 650px;
 }
 
 .projects img {
@@ -227,8 +228,7 @@ body {
 }
 
 .financial-report img {
-    display: flex;
-    width: 650px;
+    width: 666px;
     height: 500px;
 }
 
@@ -247,7 +247,6 @@ body {
 
 .contact-info {
     padding-top: 28px;
-    margin-left: -13%;
 }
 
 .contact-info a {
@@ -270,7 +269,7 @@ body {
 @media (min-width: 830px) {
     .even-column {
         grid-auto-flow: column;
-        grid-auto-columns: 1fr;
+        grid-auto-columns: 1fr 2fr;
     }
 }
 
@@ -299,9 +298,25 @@ body {
         gap: 1em;
         margin-left: 0px;
     }
+
+    .contact {
+        margin-bottom: -10px;
+    }
+
+    .contact-info {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: -10px;
+    }
 }
 
-/* Tried to center the smaller projects but could not make it responsive */
+@media screen and (max-width: 410px) {
+    .about-me-section {
+        display: block;
+    }
+}
+
+/* Tried to center the smaller projects but could not make it responsive; come back later */
 /* @media (max-width: 799px) {
     .led-wall, .call-center, .puzzle, .css-snippets {
         display: flex;
