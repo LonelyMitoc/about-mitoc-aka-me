@@ -231,8 +231,16 @@ section {
 .projects img {
     width: 320px;
     height: 300px;
-    opacity: 50%;
+    /* opacity: 50%; */
     margin: 10px 10px 0 0;
+}
+
+.project-imgs {
+    opacity: 50%;
+}
+
+.project-imgs:hover {
+    opacity: 100%;
 }
 
 .financial-report img {
@@ -242,6 +250,20 @@ section {
 
 .financial-report:hover, .led-wall:hover, .call-center:hover, .puzzle:hover, .css-snippets:hover {
     scale: 105%;
+}
+
+.css-snippets:hover {
+    color: var(--clr-primary-200);
+    font-weight: bolder;
+}
+
+.puzzle:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.led-wall:hover {
+    color: greenyellow;
 }
 
 .contact {
