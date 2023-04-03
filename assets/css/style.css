@@ -212,7 +212,7 @@ section {
 }
 
 /* To position the text on top of the images */
-.financial-report, .led-wall, .call-center, .puzzle, .css-snippets {
+.financial-report, .led-wall, .boundless, .movie, .css-snippets {
     position: relative;
 }
 
@@ -248,22 +248,29 @@ section {
     height: 500px;
 }
 
-.financial-report:hover, .led-wall:hover, .call-center:hover, .puzzle:hover, .css-snippets:hover {
+.financial-report:hover, .led-wall:hover, .boundless:hover, .movie:hover, .css-snippets:hover {
     scale: 105%;
+    font-weight: bolder;
 }
 
 .css-snippets:hover {
     color: var(--clr-primary-200);
-    font-weight: bolder;
 }
 
-.puzzle:hover {
+.movie:hover {
     color: black;
-    font-weight: bolder;
 }
 
 .led-wall:hover {
     color: greenyellow;
+}
+
+.boundless:hover {
+    color: blue;
+}
+
+.movie:hover {
+    color: lightgreen;
 }
 
 .contact {
@@ -358,7 +365,7 @@ section {
 
 /* Tried to center the smaller projects but could not make it responsive; come back later */
 /* @media (max-width: 799px) {
-    .led-wall, .call-center, .puzzle, .css-snippets {
+    .led-wall, .boundless, .movie, .css-snippets {
         display: flex;
         justify-content: center;
     }
